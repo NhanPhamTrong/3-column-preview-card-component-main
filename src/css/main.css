@@ -1,3 +1,11 @@
+body {
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+body h1 {
+  font-family: 'Big Shoulders Display', cursive;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +19,105 @@ button {
   cursor: pointer;
 }
 
-body {
-  background-color: red;
+p {
+  line-height: 1.5rem;
+}
+
+main .container {
+  width: 328px;
+  margin: 0 auto;
+}
+
+main .container .card {
+  padding: 48px;
+  color: white;
+}
+
+main .container .card h1 {
+  margin: 40px 0 35px;
+  text-transform: uppercase;
+}
+
+main .container .card p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+main .container .card button {
+  margin-top: 25px;
+  padding: 16px 30px;
+  background-color: white;
+  border: transparent solid 2px;
+  border-radius: 100px;
+}
+
+main .container .card button:hover {
+  background-color: transparent;
+  border: white solid 2px;
+}
+
+main .container .card:nth-child(1) {
+  background-color: #e38826;
+  border-radius: 10px 10px 0 0;
+}
+
+main .container .card:nth-child(1) button {
+  color: #e38826;
+}
+
+main .container .card:nth-child(1) button:hover {
+  color: white;
+}
+
+main .container .card:nth-child(2) {
+  background-color: #006970;
+}
+
+main .container .card:nth-child(2) button {
+  color: #006970;
+}
+
+main .container .card:nth-child(2) button:hover {
+  color: white;
+}
+
+main .container .card:nth-child(3) {
+  background-color: #004241;
+  border-radius: 0 0 10px 10px;
+}
+
+main .container .card:nth-child(3) button {
+  color: #004241;
+}
+
+main .container .card:nth-child(3) button:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 992px) {
+  main .container {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .container .card {
+    height: 500px;
+    width: 310px;
+    position: relative;
+  }
+  main .container .card button {
+    position: absolute;
+    bottom: 48px;
+    left: 48px;
+  }
+  main .container .card:nth-child(1) {
+    border-radius: 10px 0 0 10px;
+  }
+  main .container .card:nth-child(3) {
+    border-radius: 0 10px 10px 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

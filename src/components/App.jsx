@@ -15,7 +15,7 @@ function CreateCard(content) {
 
 function App() {
     return (
-        <main>{content.map(CreateCard)}</main>
+        <main><div className="container">{content.map(CreateCard)}</div></main>
     );
 }
 

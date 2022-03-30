@@ -1,0 +1,101 @@
+main {
+    .container {
+        width: 328px;
+        margin: 0 auto;
+
+        .card {
+            padding: 48px;
+            color: $word-color-1;
+
+            h1 {
+                margin: 40px 0 35px;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: $word-color-2;
+            }
+
+            button {
+                margin-top: 25px;
+                padding: 16px 30px;
+                background-color: $btn-background;
+                border: transparent solid 2px;
+                border-radius: 100px;
+            }
+
+            button:hover {
+                background-color: transparent;
+                border: $btn-border solid 2px;
+            }
+        }
+
+        .card:nth-child(1) {
+            background-color: $card-background-1;
+            border-radius: 10px 10px 0 0;
+
+            button {
+                color: $word-color-3;
+            }
+
+            button:hover {
+                color: $word-color-1;
+            }
+        }
+
+        .card:nth-child(2) {
+            background-color: $card-background-2;
+
+            button {
+                color: $word-color-4;
+            }
+
+            button:hover {
+                color: $word-color-1;
+            }
+        }
+
+        .card:nth-child(3) {
+            background-color: $card-background-3;
+            border-radius: 0 0 10px 10px;
+
+            button {
+                color: $word-color-5;
+            }
+
+            button:hover {
+                color: $word-color-1;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    main {
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .card {
+                height: 500px;
+                width: 310px;
+                position: relative;
+
+                button {
+                    position: absolute;
+                    bottom: 48px;
+                    left: 48px;
+                }
+            }
+
+            .card:nth-child(1) {
+                border-radius: 10px 0 0 10px;
+            }
+
+            .card:nth-child(3) {
+                border-radius: 0 10px 10px 0;
+            }
+        }
+    }
+}
