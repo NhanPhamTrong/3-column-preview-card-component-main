@@ -1,9 +1,19 @@
 body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-family: 'Lexend Deca', sans-serif;
 }
 
 body h1 {
-  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Big Shoulders Display', sans-serif;
 }
 
 * {
@@ -48,6 +58,8 @@ main .container .card button {
   background-color: white;
   border: transparent solid 2px;
   border-radius: 100px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 main .container .card button:hover {
